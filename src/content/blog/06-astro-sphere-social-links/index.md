@@ -7,6 +7,10 @@ tags:
 - Tutorial
 - Astro
 - Astro Sphere
+category: "test"
+pubDate: 'Jul 08 2022'
+coverImage: '/blog-placeholder-3.jpg'
+
 ---
 
 Astro Sphere comes preconfigured with social media links for Email, Github, Linked In and Twitter (X), but it's very easy to add more.

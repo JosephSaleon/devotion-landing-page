@@ -7,7 +7,12 @@ tags:
 - Tutorial
 - Astro
 - Astro Sphere
+category: "test"
+pubDate: 'Jul 08 2022'
+coverImage: '/blog-placeholder-3.jpg'
+
 ---
+
 ### Basics
 
 Create a folder in the respective collection you wish to create content. The name of the folder will be the slug in which your content will be found.

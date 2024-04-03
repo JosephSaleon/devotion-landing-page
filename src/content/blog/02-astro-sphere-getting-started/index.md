@@ -7,6 +7,10 @@ tags:
 - Tutorial
 - Astro
 - Astro Sphere
+category: "test"
+pubDate: 'Jul 08 2022'
+coverImage: '/blog-placeholder-3.jpg'
+
 ---
 
 Astro Sphere is designed to be configurable. This article will cover the basics on

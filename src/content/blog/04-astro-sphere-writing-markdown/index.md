@@ -8,6 +8,10 @@ tags:
 - Astro
 - Astro Sphere
 - Markdown
+category: "test"
+pubDate: 'Jul 08 2022'
+coverImage: '/blog-placeholder-3.jpg'
+
 ---
 
 ### Headings

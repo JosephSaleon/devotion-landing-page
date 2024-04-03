@@ -7,6 +7,10 @@ tags:
 - Tutorial
 - Astro
 - Astro Sphere
+category: "test"
+pubDate: 'Jul 08 2022'
+coverImage: '/blog-placeholder-3.jpg'
+
 ---
 
 A one line summary of what each file and directory is for:
