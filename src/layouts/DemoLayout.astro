@@ -1,17 +1,15 @@
 ---
 // import { buttonVariants } from "@/components/ui/button";
-import { cn, formatDate } from "@/lib/utils";
 // import { Icon } from "astro-icon/components";
-import { Image } from "astro:assets";
-import type { CollectionEntry } from "astro:content";
-import PageLayout from "./PageLayout.astro";
-import Container from "@components/Container.astro";
+import { Image } from "astro:assets"
+import type { CollectionEntry } from "astro:content"
+import PageLayout from "./PageLayout.astro"
 
 PageLayout
-type Props = CollectionEntry<"blog">;
+type Props = CollectionEntry<"demos">;
 
-const slug = Astro.props.slug;
-const { title, pubDate, updatedDate, coverImage, category } =
+const slug = Astro.props.slug
+const { title,coverImage } =
   Astro.props.data;
 ---
 
@@ -44,12 +42,6 @@ const { title, pubDate, updatedDate, coverImage, category } =
           class="font-medium text-muted-foreground"
           transition:name={"date-" + slug}
         >
-          {formatDate(pubDate)}
-          {
-            updatedDate && (
-              <span>- Last updated on {formatDate(updatedDate)}</span>
-            )
-          }
         </span>
       </div>
       <h1 class="font-heading text-4xl my-4" transition:name={"title-" + slug}>
