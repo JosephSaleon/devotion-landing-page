@@ -9,10 +9,10 @@ type Props = CollectionEntry<"demos">;
 const post = Astro.props;
 ---
 
-<div class="group space-y-2 rounded-full">
+<div class="animate group space-y-2 rounded-full">
   <a
-    href={`/blogs/${post.slug}/`}
-    class="flex h-52 group-hover:-translate-y-2 group-hover:shadow-xl transition duration-300"
+    href={`/demos/${post.slug}/`}
+    class="flex group-hover:-translate-y-2 group-hover:shadow-xl transition duration-500"
   >
     <Image
       class="w-full h-full object-cover rounded-md overflow-hidden"
@@ -25,14 +25,13 @@ const post = Astro.props;
     
   </a>
 
-  <div>
-    <a href={`/blogs/${post.slug}/`} class="group-hover:underline">
-      <div
-        class="font-heading text-xl md:text-2xl leading-snug line-clamp-3"
-        transition:name={"title-" + post.slug}
-      >
-        {post.data.title}
-    </div>
+  <div class="prose dark:prose-invert max-w-none">
+    <a href={`/demos/${post.slug}/`} 
+    class="group-hover:underline"
+    >
+     
+    <h1 class="font-heading  my-4 text-sm uppercase" transition:name={"title-" + post.slug}>
+      {post.data.title}
+    </h1>
     </a>
   </div>
-<!-- </article> -->

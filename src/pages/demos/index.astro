@@ -1,0 +1,30 @@
+---
+import BlogCard from "@components/DemoCard.astro"
+import PageLayout from "@layouts/PageLayout.astro"
+import TopLayout from "@layouts/TopLayout.astro"
+
+import { getPosts } from "@/lib/fetchers"
+// import DemoCard from "@/components/DemoCard.tsx";
+
+const posts = await getPosts();
+---
+
+<PageLayout title="Blog">
+  <TopLayout>
+    <div class="animate page-heading">
+      Templates
+    </div>
+    <hr class="animate my-6" />
+
+  </TopLayout>
+  <section class="mx-auto max-w-screen-lg p-8">
+    <div
+      class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-6 gap-y-9 md:gap-y-11 lg:gap-y-16 lg:gap-x-8 "
+    >
+      {posts.map((post) => 
+        <BlogCard {...post} />
+      )}
+    </div>
+    
+  </section>
+</PageLayout>

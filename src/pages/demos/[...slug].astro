@@ -1,5 +1,5 @@
 ---
-import BlogPostLayout from "@layouts/DemoLayout.astro"
+import DemoLayout from "../../layouts/DemoLayout.astro"
 import { getCollection, type CollectionEntry } from "astro:content"
 
 export async function getStaticPaths() {
@@ -23,6 +23,6 @@ if (!slug || !post) {
   })
 }
 ---
-<BlogPostLayout {...post}>
+<DemoLayout {...post}>
 	<Content />
-</BlogPostLayout>
+</DemoLayout>
