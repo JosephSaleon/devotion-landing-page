@@ -9,7 +9,7 @@ tags:
 - Astro Sphere
 category: "test"
 pubDate: 'Jul 08 2022'
-coverImage: '/blog-placeholder-3.jpg'
+coverImage: '/blog-placeholder-2.jpg'
 
 ---
 
