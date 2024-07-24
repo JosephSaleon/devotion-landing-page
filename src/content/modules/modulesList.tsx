@@ -9,7 +9,7 @@ const ModulesList = ({slice = 0}:Props) => {
       let modules = [
         {
             title: "Authentification",
-            desc: "Module d'authentification  comprenant la gestion des utilisateurs, des rôles, des permissions et la connection avec les diferent services (google, facebook, twitter, github, etc...).",
+            desc: "Module d'authentification comprenant la gestion des utilisateurs, des rôles, des permissions et la connection avec les diferent services (google, facebook, twitter, github, etc...).",
             bg: true,
             square: false,
             svg: 
