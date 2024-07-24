@@ -31,6 +31,27 @@ const blog = defineCollection({
   }),
 })
 
+const talents = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    date: z.coerce.date(),
+    tags: z.array(z.string()),
+    draft: z.boolean().optional(),
+    coverImage: z.string(),
+    category: z.string(),
+    pubDate: z
+      .string()
+      .or(z.date())
+      .transform((val) => new Date(val)),
+    updatedDate: z
+      .string()
+      .optional()
+      .transform((str) => (str ? new Date(str) : undefined)),
+  }),
+})
+
 const projects = defineCollection({
   type: "content",
   schema: z.object({
@@ -52,4 +73,4 @@ const legal = defineCollection({
   }),
 })
 
-export const collections = { work, blog, projects, legal }
+export const collections = { work, blog, projects, legal,talents }
