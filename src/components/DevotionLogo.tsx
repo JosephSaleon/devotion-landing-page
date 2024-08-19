@@ -1,11 +1,8 @@
-
 type props = {
     row?: boolean
 }
 
-
 const DevotionLogo = ({row = false}:props) => {
-    // Add your component logic here
     const logo = <> 
         <h1 class="bg-gradient-to-r from-purple-900 via-purple-500 to-red-400 inline-block text-transparent bg-clip-text">dev</h1>
         <div class="-ml-1 h-8 rounded-full flex items-center justify-center text-current">otion</div>

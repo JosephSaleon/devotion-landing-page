@@ -17,6 +17,7 @@ const ModuleCard = ({title, desc, bg = false, svg, color, square}:Props) => {
 
   const BgTop = `h-52 flex flex-col justify-center items-center  rounded-t-xl ${bg && `bg-${color}`}`
   // const BgTop = `h-52 flex flex-col justify-center items-center  rounded-t-xl bg-gray-300`
+  console.log("🚀 ~ ModuleCard ~ BgTop:", BgTop)
   
   return (
 // <!-- Card Blog -->
@@ -27,10 +28,6 @@ const ModuleCard = ({title, desc, bg = false, svg, color, square}:Props) => {
           <svg class="size-28" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
             {square && <rect width="56" height="56" rx="10" fill="white" />}
             {svg}
-           {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 -12 48 48" fill="currentColor" class="size-6 text-purple-600">
-              <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clip-rule="evenodd" />
-            </svg> */}
-            
           </svg>
         </div>
         <div class="p-4 md:p-6">
